@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    display: block;
+    margin-bottom: 24px;
+}
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+}
+
+.container-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 48.35%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+    
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 8px;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+section {
+    padding: 48px 0;
+}
+
+header .container nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    color: #fff;
+}
+
+header > .container, 
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #192a56;
+    padding: 16px 0;
+    color: #fff;
+}
+
+nav li a {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .container-flex img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
+    .container-flex {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }  
+
+    .container {
+        max-width: 90%;
+    }
+
+    .container .container-flex {
+        display: block;
+    }
+    
+    .responsive-img {
+        max-width: 80%; /* A imagem não excederá a largura do contêiner */
+        height: auto;
+    }
+
+    #sobre-a-loja {
+        display: block;
+    }
+
+    .lista-quadros .item-central {
+        margin-bottom: 32px;
+
+    }
+    
+    aside {
+        padding-left: 0;
+    }
+
+    header div.container {
+        flex-direction: rows;
+    }
+
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+
+    .menu {
+        display: block;
+    }
+    
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center; 
+    padding-bottom: 16px;   
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    #sobre-a-loja {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #sobre-a-loja img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+
+    .container .lista-quadros {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}
