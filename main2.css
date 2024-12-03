@@ -27,12 +27,18 @@ header {
 }
 
 .container-flex {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 48.35%);
     column-gap: 1%;
     row-gap: 5%;
 }
 
+.container-flex.lista-produtos {
+    display: flex;
+    grid-template-columns: repeat(4, 23.75%);
+    column-gap: 1%;
+    row-gap: 4%;
+}
     
 section {
     padding: 48px 0;
